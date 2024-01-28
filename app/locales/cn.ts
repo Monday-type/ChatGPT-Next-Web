@@ -19,10 +19,10 @@ const cn = {
     Later: "稍后再说",
   },
   ChatItem: {
-    ChatItemCount: (count: number) => `${count} 条对话`,
+    ChatItemCount: (count: number) => ` 条对话`,
   },
   Chat: {
-    SubTitle: (count: number) => `共 ${count} 条对话`,
+    SubTitle: (count: number) => `共  条对话`,
     EditMessage: {
       Title: "编辑消息记录",
       Topic: {
@@ -67,7 +67,7 @@ const cn = {
     Rename: "重命名对话",
     Typing: "正在输入…",
     Input: (submitKey: string) => {
-      var inputHints = `${submitKey} 发送`;
+      var inputHints = ` 发送`;
       if (submitKey === String(SubmitKey.Enter)) {
         inputHints += "，Shift + Enter 换行";
       }
@@ -161,11 +161,11 @@ const cn = {
     },
 
     Update: {
-      Version: (x: string) => `当前版本：${x}`,
+      Version: (x: string) => `当前版本：`,
       IsLatest: "已是最新版本",
       CheckUpdate: "检查更新",
       IsChecking: "正在检查更新...",
-      FoundUpdate: (x: string) => `请等待新版本更新：${x}`,
+      FoundUpdate: (x: string) => `请等待新版本更新：`,
       GoToUpdate: "Github仓库",
     },
     SendKey: "发送键",
@@ -218,7 +218,7 @@ const cn = {
 
       LocalState: "本地数据",
       Overview: (overview: any) => {
-        return `${overview.chat} 次对话，${overview.message} 条消息，${overview.prompt} 条提示词，${overview.mask} 个面具`;
+        return ` 次对话， 条消息， 条提示词， 个面具`;
       },
       ImportFailed: "导入失败",
     },
@@ -239,7 +239,7 @@ const cn = {
       },
       List: "自定义提示词列表",
       ListCount: (builtin: number, custom: number) =>
-        `内置 ${builtin} 条，用户定义 ${custom} 条`,
+        `内置  条，用户定义  条`,
       Edit: "编辑",
       Modal: {
         Title: "提示词列表",
@@ -262,7 +262,7 @@ const cn = {
     Usage: {
       Title: "余额查询",
       SubTitle(used: any, total: any) {
-        return `本月已使用 $${used}，订阅总额 $${total}`;
+        return `本月已使用 $，订阅总额 $`;
       },
       IsChecking: "正在检查…",
       Check: "重新检查",
@@ -321,7 +321,7 @@ const cn = {
 
         Endpoint: {
           Title: "接口地址",
-          SubTitle: "不包含请求路径，样例：",
+          SubTitle: "样例：",
         },
 
         ApiVerion: {
@@ -378,7 +378,7 @@ const cn = {
     Failed: "下载失败。",
   },
   Context: {
-    Toast: (x: any) => `包含 ${x} 条预设提示词`,
+    Toast: (x: any) => `包含  条预设提示词`,
     Edit: "当前对话设置",
     Add: "新增一条对话",
     Clear: "上下文已清除",
@@ -394,12 +394,12 @@ const cn = {
     Name: "面具",
     Page: {
       Title: "预设角色面具",
-      SubTitle: (count: number) => `${count} 个预设角色定义`,
+      SubTitle: (count: number) => ` 个预设角色定义`,
       Search: "搜索角色面具",
       Create: "新建",
     },
     Item: {
-      Info: (count: number) => `包含 ${count} 条预设对话`,
+      Info: (count: number) => `包含  条预设对话`,
       Chat: "对话",
       View: "查看",
       Edit: "编辑",
@@ -408,7 +408,7 @@ const cn = {
     },
     EditModal: {
       Title: (readonly: boolean) =>
-        `编辑预设面具 ${readonly ? "（只读）" : ""}`,
+        `编辑预设面具  ""`,
       Download: "下载预设",
       Clone: "克隆预设",
     },
