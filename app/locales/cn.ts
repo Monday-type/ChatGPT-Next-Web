@@ -8,11 +8,11 @@ const cn = {
   Error: {
     Unauthorized: isApp
       ? "检测到无效 API Key，请前往[设置](/#/settings)页检查 API Key 是否配置正确。"
-      : "访问密码不正确或为空，请前往 [登录](/#/auth) 页输入正确的访问密码，或者在 [设置](/#/settings) 页填入你自己的 OpenAI API Key。\n没有密码？你也可以试试下面的[免费无密码镜像](https://free.zhangmonday.top)",
+      : "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码，或者在[设置](/#/settings)页填入你自己的 OpenAI API Key。没有密码？试试下面的[免费镜像](https://free.zhangmonday.top)",
   },
   Auth: {
     Title: "需要密码",
-    Tips: "该网站需要密码验证，请在下方填入访问码",
+    Tips: "本网站需要密码验证，请在下方填入访问码",
     SubTips: "或者输入你的 OpenAI 或 Google API 密钥",
     Input: "在此处填写访问码",
     Confirm: "确认",
@@ -321,7 +321,7 @@ const cn = {
 
         Endpoint: {
           Title: "接口地址",
-          SubTitle: "样例：",
+          SubTitle: "不包含请求路径，样例：",
         },
 
         ApiVerion: {
@@ -437,7 +437,7 @@ const cn = {
     NotShow: "不再展示",
     ConfirmNoShow: "确认禁用？禁用后可以随时在设置中重新启用。",
     Title: "挑选一个面具",
-    SubTitle: "点直接开始来开始聊天,或者点击下面的提示词开始对话",
+    SubTitle: "点击直接开始或选择下面的提示词",
     More: "查看全部",
   },
 
